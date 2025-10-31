@@ -1,40 +1,86 @@
-<div align="center">
+# **EcoBlissBath**
 
-# OpenClassrooms - Eco-Bliss-Bath
-</div>
+EcoBlissBath est une jeune entreprise, spécialisée dans la distribution de cosmétiques écologiques. Notre produit phare est un savon solide respectueux de l'environnement.
 
-<p align="center">
-    <img src="https://img.shields.io/badge/MariaDB-v11.7.2-blue">
-    <img src="https://img.shields.io/badge/Symfony-v6.2-blue">
-    <img src="https://img.shields.io/badge/Angular-v13.3.0-blue">
-    <img src="https://img.shields.io/badge/docker--build-passing-brightgreen">
-  <br><br><br>
-</p>
+## **Prérequis**
 
-# Prérequis
-Pour démarrer cet applicatif web vous devez avoir les outils suivants:
+Avant de démarrer le projet, assurez-vous d'avoir installé les outils suivants :
 - Docker
-- NodeJs
+- Node.js
+- NPM
+- Cypress
+- Un navigateur web moderne (Chrome ou Firefox recommandés)
 
-# Installation et démarrage
-Clonez le projet pour le récupérer
-``` 
-git clone https://github.com/OpenClassrooms-Student-Center/Eco-Bliss-Bath-V2.git
-cd Eco-Bliss-Bath-V2
-```
-Pour démarrer l'API avec ça base de données.
-```
-docker compose up -d
-```
-# Pour démarrer le frontend de l'applicatif
-Rendez-vous dans le dossier frontend
-```
-cd ./frontend
-```
-Installez les dépendances du projet
-```
-npm i
-ou
-npm install (si vous préférez)
+## **Installation et lancement du projet**
+
+### 1. Clonage du dépôt :
+
+```bash
+git clone https://github.com/OpenClassrooms-Student-Center/TesteurLogiciel_Automatisez_des_tests_pour_une_boutique_en_ligne.git
 ```
 
+### 2. Démarrage du backend :
+
+Ouvrez une fenêtre de terminal, puis :
+- Naviguez vers le répertoire du projet cloné
+- Exécutez la commande ci-dessous pour démarrer le backend :
+
+```bash
+docker-compose up
+```
+
+### 3. Démarrage du frontend :
+
+Dans une nouvelle fenêtre de terminal :
+- Accédez au dossier du projet cloné
+- Lancez les commandes suivantes :
+
+```bash
+npm install
+npm start
+```
+
+## **Mise en place des tests**
+
+### 1. Installation de Cypress :
+
+Ouvrez un terminal de commande et :
+- Rendez-vous dans le répertoire du projet cloné
+- Installez Cypress avec la commande suivante :
+
+```bash
+npm install cypress --save-dev
+```
+
+### 2. Ouverture de l'interface Cypress :
+
+Dans le terminal, saisissez :
+
+```bash
+npx cypress open
+```
+
+## **Exécution des tests et création du rapport**
+
+### 1. Lancement des tests avec génération de rapport :
+
+- Ouvrez un nouveau terminal
+- Placez-vous dans le répertoire du projet cloné
+- Exécutez la commande suivante pour lancer les tests et générer automatiquement un rapport :
+
+```bash
+npx cypress run
+```
+
+## **Identifiants de connexion**
+
+Identifiant : test2@test.fr  
+Mot de passe : testtest
+
+## **Documentation API**
+
+Lien vers la documentation Swagger : http://localhost:8081/api/doc
+
+## **Auteurs**
+
+Lucas, Marie
